@@ -67,23 +67,6 @@
     }
 }
 
-.header__navbar {
-    max-width: 670px;
-    width: 100%;
-}
-
-@media(max-width: 1024px) {
-    .header__navbar {
-        max-width: 566px;
-    }
-}
-
-@media(max-width: 767px) {
-    .header__navbar {
-        max-width: 24px;
-    }
-}
-
 .header__menu-link {
     text-decoration: none;
     font-family: "Raleway", sans-serif;
@@ -92,9 +75,10 @@
     line-height: 15px;
     text-transform: uppercase;
     color: #ffffff;
-    display: flex;
     text-align: center;
     padding: 38px 15px 36px;
+    min-width: 134px;
+    display: inline-block;
 }
 
 .header__menu-link:hover {
@@ -134,7 +118,7 @@
 
 .banner {
     background: url(assets/background.jpg);
-    padding: 262px 170px 120px;
+    padding: 262px 0 120px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
