@@ -108,15 +108,18 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  margin-bottom: 127px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .banner {
     padding: 316px 0 126px;
+    margin-bottom: 87px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .banner {
     padding: 140px 0 52px;
+    margin-bottom: 57px;
   }
 }
 .banner::before {
@@ -205,5 +208,268 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .banner__button {
     max-width: 280px;
+  }
+}
+
+.benefits {
+  margin-bottom: 134px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .benefits {
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefits {
+    margin-bottom: 35px;
+  }
+}
+.benefits__content {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 29px;
+       column-gap: 29px;
+  row-gap: 97px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .benefits__content {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    row-gap: 57px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefits__content {
+    flex-direction: column;
+    row-gap: 49px;
+    align-items: center;
+  }
+}
+.benefits__content .benefit {
+  width: calc((100% - 58px) / 3);
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .benefits__content .benefit {
+    width: calc((100% - 40px) / 3);
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefits__content .benefit {
+    max-width: 280px;
+    width: 100%;
+  }
+}
+.benefits__content .benefit__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding: 22px 0;
+  color: #2D3033;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .benefits__content .benefit__title {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 19.5px 0;
+    margin-bottom: 4px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefits__content .benefit__title {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 16px 0;
+    margin-bottom: 0;
+  }
+}
+.benefits__content .benefit__description {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #6C7279;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .benefits__content .benefit__description {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.benefits__content .benefit__image {
+  margin-bottom: 29px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .benefits__content .benefit__image {
+    margin-bottom: 33px;
+    max-width: 85px;
+    max-height: 85px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefits__content .benefit__image {
+    margin-bottom: 30px;
+    max-width: 75px;
+    max-height: 75px;
+  }
+}
+
+.people {
+  margin-bottom: 114px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .people {
+    margin-bottom: 78px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .people {
+    margin-bottom: 34px;
+  }
+}
+.people__content {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .people__content {
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .people__content {
+    flex-direction: column;
+    row-gap: 49px;
+    align-items: center;
+  }
+}
+.people__content .person {
+  width: calc((100% - 90px) / 4);
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .people__content .person {
+    width: calc((100% - 75px) / 4);
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .people__content .person {
+    max-width: 280px;
+    width: 100%;
+  }
+}
+.people__content .person__name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  align-items: center;
+  text-transform: capitalize;
+  color: #2D3033;
+  margin-bottom: 5px;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .people__content .person__name {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 4.6px;
+  }
+}
+.people__content .person__job {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FF4343;
+  margin-bottom: 18px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .people__content .person__job {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 22.45px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .people__content .person__job {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 38.5px;
+  }
+}
+.people__content .person__description {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #6C7279;
+  margin-bottom: 38px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .people__content .person__description {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 39px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .people__content .person__description {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 55px;
+  }
+}
+.people__content .person__image-wrapper {
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .people__content .person__image-wrapper {
+    margin-bottom: 25px;
+    width: 227px;
+    height: 227px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .people__content .person__image-wrapper {
+    margin-bottom: 25px;
+    width: 280px;
+    height: 227px;
+  }
+}
+.people__content .person__image-wrapper__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.people__content .person__social {
+  display: flex;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .people__content .person__social {
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+  }
+}
+.people__content .person__social-link {
+  width: 39px;
+  height: 39px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .people__content .person__social-link {
+    width: 32px;
+    height: 32px;
   }
 }/*# sourceMappingURL=style.css.map */
