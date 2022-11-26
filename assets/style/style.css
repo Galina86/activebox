@@ -325,11 +325,23 @@
   }
 }
 
+.gallery {
+  margin-bottom: 114px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .gallery {
+    margin-bottom: 78px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .gallery {
+    margin-bottom: 35px;
+  }
+}
 .gallery__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2px;
-  margin-bottom: 114px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .gallery__grid {
