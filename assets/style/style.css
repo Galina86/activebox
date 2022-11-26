@@ -68,6 +68,7 @@
   padding: 38px 15px 36px;
   min-width: 134px;
   display: inline-block;
+  border-bottom: 3px solid transparent;
 }
 .header__menu-link:hover {
   border-bottom: 3px solid #BABBC5;
@@ -195,19 +196,27 @@
   max-width: 370px;
   width: 100%;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 26px 0;
+  text-decoration: none;
+}
+.banner__button:hover {
+  background: #E71414;
+}
+.banner__button:active {
+  background: #FF4343;
+  box-shadow: 4px 4px 30px #FF4343;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .banner__button {
     font-size: 24px;
     line-height: 28px;
     max-width: 314px;
-    padding: 15px 0;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .banner__button {
     max-width: 280px;
+    padding: 16px 0;
   }
 }
 
@@ -267,24 +276,21 @@
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  padding: 22px 0;
+  margin-bottom: 42px;
   color: #2D3033;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .benefits__content .benefit__title {
     font-size: 18px;
     line-height: 21px;
-    padding: 19.5px 0;
-    margin-bottom: 4px;
+    margin-bottom: 23.5px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .benefits__content .benefit__title {
     font-size: 18px;
     line-height: 21px;
-    padding: 16px 0;
-    margin-bottom: 0;
+    margin-bottom: 16px;
   }
 }
 .benefits__content .benefit__description {
@@ -302,7 +308,7 @@
   }
 }
 .benefits__content .benefit__image {
-  margin-bottom: 29px;
+  margin-bottom: 51px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .benefits__content .benefit__image {
@@ -427,30 +433,33 @@
   }
 }
 .people__content .person__image-wrapper {
-  width: 270px;
-  height: 270px;
-  overflow: hidden;
   margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 100%;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .people__content .person__image-wrapper {
     margin-bottom: 25px;
-    width: 227px;
-    height: 227px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .people__content .person__image-wrapper {
     margin-bottom: 25px;
-    width: 280px;
-    height: 227px;
   }
 }
-.people__content .person__image-wrapper__image {
+.people__content .person__image-wrapper__image-wrapper::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.people__content .person__image {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .people__content .person__social {
   display: flex;
@@ -466,6 +475,10 @@
 .people__content .person__social-link {
   width: 39px;
   height: 39px;
+  border: 1px solid #C6CBCD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .people__content .person__social-link {
